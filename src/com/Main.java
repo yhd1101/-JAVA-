@@ -9,6 +9,7 @@ public class Main {
         RegisterMember registerMember = new RegisterMember();
         UpdateMember updateMember = new UpdateMember();
         DeleteMember deleteMember = new DeleteMember();
+        SendMessage sendMessage = new SendMessage();
         System.out.println("\t\t\t\t\t\t 회원 관리 프로그램");
 
         while (true) {
@@ -42,7 +43,7 @@ public class Main {
                     deleteMember.deleteUser();
                     break;
                 case 5 :
-                    System.out.println("쪽지보내기.");
+                    sendMessage.send();
                     break;
                 case 6 :
                     System.out.println("종료.");
