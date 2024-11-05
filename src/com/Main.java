@@ -7,6 +7,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         MemberList memberList = new MemberList();
         RegisterMember registerMember = new RegisterMember();
+        UpdateMember updateMember = new UpdateMember();
         System.out.println("\t\t\t\t\t\t 회원 관리 프로그램");
 
         while (true) {
@@ -28,10 +29,10 @@ public class Main {
                     memberList.displayMemberList();
                     break;
                 case 2 :
-                    registerMember.Register();
+                    registerMember.register();
                     break;
                 case 3 :
-                    System.out.println("회원정보 수정입니다.");
+                    updateMember.updateUser();
                     break;
                 case 4 :
                     System.out.println("회원정보 삭제입니다.");
