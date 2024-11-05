@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class RegisterMember {
     Scanner sc = new Scanner(System.in);
 
-    public void Register() {
+    public void register() {
         String url = "jdbc:mariadb://localhost:3306/member";
         String user = "root";
         String password = "123456";
